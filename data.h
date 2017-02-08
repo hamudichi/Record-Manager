@@ -22,11 +22,30 @@
 // 				University. 												 //
 // 																			 //
 //                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~							 //
-// 	 File : students.c														 //
-// 																			 //
+// 	 File : data.h  														 //
+// 	 Contains : All structure defentions for the entinties					 //
 // ######################################################################### // 
+#ifdef DATA_H_
+#define DATA_H_
 
-#include <stdio.h>
-#include "employee.h"
-#include "student.h"
-#include <string.h>  
+struct person {
+    char[15] firstname;
+    char[15] lastname;
+    char[10] telephone;
+} person;
+
+struct student {
+    person stud;
+    unsigned short  gpa : 4; 
+    unsigned double fees;
+    unsigned short courseLoad : 6;
+} student;
+
+struct employee {
+	person emp;
+	unsigned double salary;
+	unsigned short yearsOfService;
+	unsigned short level : 4;
+} employee;
+
+#endif

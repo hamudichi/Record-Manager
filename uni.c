@@ -24,4 +24,17 @@
 //                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~							 //
 // 	 File : uni.c															 //
 // 																			 //
-// ######################################################################### // 
+// ######################################################################### //
+
+
+#include <stdio.h>
+#include "employee.h"
+#include "students.h"
+#include <string.h>
+
+int main ()
+{
+    printf("Welcome you piece of shit :) \n"
+           "Let me show you what it means to be a fucking man\n");
+
+}
