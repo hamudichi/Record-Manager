@@ -28,24 +28,24 @@
 #ifdef DATA_H_
 #define DATA_H_
 
-struct person {
+typedef struct Person {
     char[15] firstname;
     char[15] lastname;
     char[10] telephone;
-} person;
+} Person;
 
-struct student {
-    person stud;
+typedef struct Student {
+    Person stud;
     unsigned short  gpa : 4; 
     unsigned double fees;
     unsigned short courseLoad : 6;
-} student;
+} Student;
 
-struct employee {
-	person emp;
+typedef struct Employee {
+	Person emp;
 	unsigned double salary;
 	unsigned short yearsOfService;
 	unsigned short level : 4;
-} employee;
+} Employee;
 
 #endif
